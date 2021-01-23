@@ -1,0 +1,6 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/About/About"
+  ]
+}
