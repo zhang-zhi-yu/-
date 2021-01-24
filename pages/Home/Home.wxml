@@ -1,3 +1,18 @@
 <!--pages/Home/Home.wxml-->
-<text class="box">Holle word</text>
-<button size="mini">按钮</button>
+<!-- 1.小程序数据绑定: {{}} -->
+<view>Hello {{name}}
+  <text class="box">年龄：{{age}}</text>
+</view>
+
+<!-- 2.列表展示: wx:for -->
+<!-- item 遍历展示自带的指令 -->
+<view wx:for="{{studes}}">
+  <text>{{item.id}}-{{item.username}}-{{item.age}}</text>
+</view>
+
+<!-- 3.事件 bind~(tab/click) -->
+<view>
+  计数：{{age}}
+  <button size="mini" bindtap="clickadd">+</button>
+  <button size="mini" bindtap="clickset">-</button>
+</view>

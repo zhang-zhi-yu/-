@@ -5,7 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name:'zzy',
+    age:25,
+    studes:[
+      { id:'001',username:'lili',age:18 },
+      { id:'002',username:'rose',age:20 },
+      { id:'003',username:'toms',age:23 },
+    ]
+  },
 
+  // setData 类似 vue 的双向数据绑定
+  clickadd(){
+    this.setData({
+      age:this.data.age+1
+    })
+  },
+  clickset(){
+    this.setData({
+      age:this.data.age-1
+    })
   },
 
   /**

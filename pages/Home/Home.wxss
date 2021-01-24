@@ -1,6 +1,6 @@
 /* pages/Home/Home.wxss */
 .box {
   color: crimson;
-  font-size: 30px;
+  font-size: 20px;
   margin: 100px auto;
 }
